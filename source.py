@@ -10,4 +10,4 @@ elif menu == 3:
 elif menu == 4:
     print "X"
 else:
-    print "ERROR"
+    print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
