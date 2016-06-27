@@ -45,7 +45,6 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
-        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 2:
     	player = "THIEF"
     	PP = 10
@@ -60,7 +59,6 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
-        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 3:
     	player = "WARRIOR"
     	PP = 15
@@ -75,7 +73,6 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
-        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 4:
     	player = "WIZARD"
     	PP = 15
@@ -90,7 +87,8 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
-        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
-    print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
+    else:
+        print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
+    print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM."
 else:
     print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
