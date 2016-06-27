@@ -1,5 +1,5 @@
 #----------------------------------------------------------------------------------------
-#falta definir sobre os ataques e companheiros e salvar em txt
+#falta definir os companheiros
 #-------------------------------------------------------------------------------------------------
 print "\n\n               SOULBOUND\n\n"
 print "PRESS 1 TO PLAY\nPRESS 2 TO CREDITS\nPRESS 3 FOR INSTRUCTIONS\nPRESS 4 TO SAVE YOUR SETTINGS"
@@ -17,31 +17,80 @@ elif menu == 4:
     race = input("ENTER: ")
     print "\n\nCHOOSE A CLASS(number):\n1.MAGE\n2.THIEF\n3.WARRIOR\n4.WIZARD\n"
     classes = input("ENTER: ")
-    Int = 0
-    Agi = 0
-    For = 0
-    player = 0
+    PP = 0
+    basic = 0
+    PV = 0
+    dictRace = {1: "ELF", 2: "ORC", 3: "DWARF", 4: "HUMAN"}
+    dictClasses = {1: "MAGE", 2: "THIEF", 3: "WARRIOR", 4: "WIZARD"}
+    fileClasses = open("classes.txt", "w")
+    fileClasses.write(dictClasses[classes])
+    fileClasses.close()
+    fileMoney = open("money.txt", "w")
+    fileMoney.write("20")
+    fileMoney.close()
+    fileRace = open("race.txt", "w")
+    fileRace.write(dictRace[race])
+    fileRace.close()
     if classes == 1:
     	player = "MAGE"
-    	Int = 20
-    	Agi = 15
-    	For = 10
+    	PP = 20
+    	basic = 15
+    	PV = 50
+        filePP = open("PP.txt", "w")
+        filePP.write(str(PP))
+        filePP.close()
+        fileBasic = open("basic.txt", "w")
+        fileBasic.write(str(basic))
+        fileBasic.close()
+        filePV = open("PV.txt", "w")
+        filePV.write(str(PV))
+        filePV.close()
+        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 2:
     	player = "THIEF"
-    	Int = 10
-    	Agi = 20
-    	For = 15
+    	PP = 10
+    	basic = 20
+    	PV = 75
+        filePP = open("PP.txt", "w")
+        filePP.write(str(PP))
+        filePP.close()
+        fileBasic = open("basic.txt", "w")
+        fileBasic.write(str(basic))
+        fileBasic.close()
+        filePV = open("PV.txt", "w")
+        filePV.write(str(PV))
+        filePV.close()
+        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 3:
     	player = "WARRIOR"
-    	Int = 15
-    	Agi = 10
-    	For = 20
+    	PP = 15
+    	basic = 10
+    	PV = 100
+        filePP = open("PP.txt", "w")
+        filePP.write(str(PP))
+        filePP.close()
+        fileBasic = open("basic.txt", "w")
+        fileBasic.write(str(basic))
+        fileBasic.close()
+        filePV = open("PV.txt", "w")
+        filePV.write(str(PV))
+        filePV.close()
+        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
     elif classes == 4:
     	player = "WIZARD"
-    	Int = 15
-    	Agi = 15
-    	For = 15
-    else:
-    	print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
+    	PP = 15
+    	basic = 15
+    	PV = 75
+        filePP = open("PP.txt", "w")
+        filePP.write(str(PP))
+        filePP.close()
+        fileBasic = open("basic.txt", "w")
+        fileBasic.write(str(basic))
+        fileBasic.close()
+        filePV = open("PV.txt", "w")
+        filePV.write(str(PV))
+        filePV.close()
+        print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM"
+    print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
 else:
     print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
