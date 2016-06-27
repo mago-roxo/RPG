@@ -28,5 +28,17 @@ elif menu == 4:
     	Int = 10
     	Agi = 20
     	For = 15
+    elif classes == 3:
+    	player = "WARRIOR"
+    	Int = 15
+    	Agi = 10
+    	For = 20
+    elif classes == 4:
+    	player = "WIZARD"
+    	Int = 15
+    	Agi = 15
+    	For = 15
+    else:
+    	print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
 else:
     print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
