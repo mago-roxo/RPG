@@ -1,3 +1,6 @@
+#----------------------------------------------------------------------------------------
+#falta definir sobre os ataques e companheiros e salvar em txt
+#-------------------------------------------------------------------------------------------------
 print "\n\n               SOULBOUND\n\n"
 print "PRESS 1 TO PLAY\nPRESS 2 TO CREDITS\nPRESS 3 FOR INSTRUCTIONS\nPRESS 4 TO SAVE YOUR SETTINGS"
 menu = input("\n\nENTER: ")
