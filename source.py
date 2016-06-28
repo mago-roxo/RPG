@@ -97,6 +97,18 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
+        assist = "BLACK CAT"
+        basicAssist = 5
+        PVAssist = 4
+        fileAssist = open("assist.txt", "w")
+        fileAssist.write(assist)
+        fileAssit.close()
+        fileBasicAssist = open("basicAssist.txt", "w")
+        fileBasicAssist.write(basicAssist)
+        fileBasicAssist.close()
+        filePVAssist = open("PVAssist.txt", "w")
+        filePVAssist.write(PVAssist)
+        filePVAssist.close()
     else:
         print "ERROR, YOU NEED TO TYPE 1, 2, 3 OR 4."
     print "YOUR SETTINGS HAVE BEEN SAVED, IF YOU WANT TO PLAY THE GAME, RESTART THE PROGRAM."
