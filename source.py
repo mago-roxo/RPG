@@ -69,6 +69,18 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
+        assist = "FALCON"
+        basicAssist = 4
+        PVAssist = 5
+        fileAssist = open("assist.txt", "w")
+        fileAssist.write(assist)
+        fileAssit.close()
+        fileBasicAssist = open("basicAssist.txt", "w")
+        fileBasicAssist.write(basicAssist)
+        fileBasicAssist.close()
+        filePVAssist = open("PVAssist.txt", "w")
+        filePVAssist.write(PVAssist)
+        filePVAssist.close()
     elif classes == 3:
     	player = "WARRIOR"
     	PP = 15
@@ -83,6 +95,18 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
+        assist = "SQUIRE"
+        basicAssist = 6
+        PVAssist = 3
+        fileAssist = open("assist.txt", "w")
+        fileAssist.write(assist)
+        fileAssit.close()
+        fileBasicAssist = open("basicAssist.txt", "w")
+        fileBasicAssist.write(basicAssist)
+        fileBasicAssist.close()
+        filePVAssist = open("PVAssist.txt", "w")
+        filePVAssist.write(PVAssist)
+        filePVAssist.close()
     elif classes == 4:
     	player = "WIZARD"
     	PP = 15
