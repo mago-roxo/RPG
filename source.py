@@ -1,6 +1,3 @@
-#----------------------------------------------------------------------------------------
-#falta definir os companheiros
-#-------------------------------------------------------------------------------------------------
 print "\n\n               SOULBOUND\n\n"
 print "PRESS 1 TO PLAY\nPRESS 2 TO CREDITS\nPRESS 3 FOR INSTRUCTIONS\nPRESS 4 TO SAVE YOUR SETTINGS"
 menu = input("\n\nENTER: ")
@@ -20,13 +17,14 @@ elif menu == 4:
     PP = 0
     basic = 0
     PV = 0
+    money = 20
     dictRace = {1: "ELF", 2: "ORC", 3: "DWARF", 4: "HUMAN"}
     dictClasses = {1: "MAGE", 2: "THIEF", 3: "WARRIOR", 4: "WIZARD"}
     fileClasses = open("classes.txt", "w")
     fileClasses.write(dictClasses[classes])
     fileClasses.close()
     fileMoney = open("money.txt", "w")
-    fileMoney.write("20")
+    fileMoney.write(money)
     fileMoney.close()
     fileRace = open("race.txt", "w")
     fileRace.write(dictRace[race])
@@ -45,6 +43,18 @@ elif menu == 4:
         filePV = open("PV.txt", "w")
         filePV.write(str(PV))
         filePV.close()
+        assist = "GOLEM"
+        basicAssist = 3
+        PVAssist = 6
+        fileAssist = open("assist.txt", "w")
+        fileAssist.write(assist)
+        fileAssit.close()
+        fileBasicAssist = open("basicAssist.txt", "w")
+        fileBasicAssist.write(basicAssist)
+        fileBasicAssist.close()
+        filePVAssist = open("PVAssist.txt", "w")
+        filePVAssist.write(PVAssist)
+        filePVAssist.close()
     elif classes == 2:
     	player = "THIEF"
     	PP = 10
