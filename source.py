@@ -9,7 +9,7 @@ elif menu == 3:
     print "\n\n"
 elif menu == 4:
     print "\n\nSETTINGS\n\nObservaiton: if you want to change your class you will need to reset "
-    print "the game deleting deleting all the files created by it."
+    print "the game deleting all the files created by it."
     print "\n\nCHOOSE A RACE(number):\n1.ELF\n2.ORC\n3.DWARF\n4.HUMAN\n"
     race = input("ENTER: ")
     print "\n\nCHOOSE A CLASS(number):\n1.MAGE\n2.THIEF\n3.WARRIOR\n4.WIZARD\n"
