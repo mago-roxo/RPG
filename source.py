@@ -4,7 +4,7 @@ menu = input("\n\nENTER: ")
 if menu == 1:
     print "\n\n"
 elif menu == 2:
-    print "\n\nCREDITS:\nEduardo Daemon Teixeira dos Santos\nMarcos Zlotnik\nRafael Utescher Stamillo"
+    print "\n\nCREDITS:\nEduardo Daemon Teixeira dos Santos\nMarcos Zlotnik"
 elif menu == 3:
     print "\n\n"
 elif menu == 4:
