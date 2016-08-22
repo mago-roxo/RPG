@@ -1,13 +1,11 @@
 print "\n\n               SOULBOUND\n\n"
-print "PRESS 1 TO PLAY\nPRESS 2 TO CREDITS\nPRESS 3 FOR INSTRUCTIONS\nPRESS 4 TO SAVE YOUR SETTINGS"
+print "PRESS 1 TO PLAY\nPRESS 2 TO CREDITS\nPRESS 3 TO SAVE YOUR SETTINGS"
 menu = input("\n\nENTER: ")
 if menu == 1:
     print "\n\n"
 elif menu == 2:
     print "\n\nCREDITS:\nEduardo Daemon Teixeira dos Santos\nMarcos Zlotnik"
 elif menu == 3:
-    print "\n\n"
-elif menu == 4:
     print "\n\nSETTINGS\n\nObservaiton: if you want to change your class you will need to reset "
     print "the game deleting all the files created by it."
     print "\n\nCHOOSE A RACE(number):\n1.ELF\n2.ORC\n3.DWARF\n4.HUMAN\n"
